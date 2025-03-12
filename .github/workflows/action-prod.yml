@@ -1,0 +1,18 @@
+name: Test and Deploy
+
+on: push
+
+jobs: 
+    first-job:
+        runs-on: ubuntu-latest
+        steps: 
+           - name: step1 get code
+             uses: actions/checkout@4
+
+           - name: step2 Instal dep
+             run: npm install
+
+           - name: step3 run Lint
+             run: npm run dev
+    
+        
