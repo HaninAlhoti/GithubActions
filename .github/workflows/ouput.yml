@@ -10,7 +10,7 @@ jobs:
         steps:
              - name: step1
                run: |
-                    echo "${{ github.toJSON.event.repsitory}}"
+                    echo "${{ github.toJSON.event}}"
 
 
 
